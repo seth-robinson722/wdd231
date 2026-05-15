@@ -1,51 +1,57 @@
-/* General Styling */
+:root {
+    --primary-color: #333;
+    --accent-color: #8b2d2d;
+    /* For completed courses */
+    --bg-color: #f4f4f4;
+    --card-bg: #fff;
+    --text-color: #000;
+}
+
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
 }
 
-.logo-container {
+.logo-area {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
+    gap: 15px;
+    font-size: 1.5rem;
 }
 
 #menu {
     font-size: 2rem;
     background: none;
     border: none;
+    color: white;
     cursor: pointer;
 }
 
-/* Navigation - Hidden by default on mobile, shown via JS */
-nav {
-    background-color: #333;
-}
-
+/* Nav Wayfinding and Hover */
 .navigation {
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* Stacked on mobile */
+    background-color: #444;
 }
 
-.navigation li a {
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
     display: block;
     padding: 1rem;
     color: white;
@@ -53,49 +59,41 @@ nav {
     text-align: center;
 }
 
-.navigation li a:hover,
-.active {
-    background-color: #555;
+.navigation a:hover {
+    background-color: #666;
 }
 
-/* Main Content */
+.navigation a.active {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
 main {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 1rem;
-}
-
-h1 {
-    text-align: center;
-    border-bottom: 1px solid #333;
 }
 
 .card {
-    background: #fff;
-    margin-bottom: 1rem;
-    border: 1px solid #333;
+    background: var(--card-bg);
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
 }
 
 .card h2 {
-    background-color: #333;
+    background-color: var(--primary-color);
     color: white;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-align: center;
-    font-size: 1.1rem;
 }
 
-.card p {
-    padding: 1rem;
-}
-
-.photo img {
+.photo-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Course Section */
+/* Courses */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -103,77 +101,29 @@ h1 {
     padding: 1rem;
 }
 
-.filter-buttons button {
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-}
-
-.course-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* Stacked cards on mobile */
-    gap: 10px;
-    padding: 1rem;
-}
-
 .course-card {
-    background-color: #ccc;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: #e7e7e7;
-    text-align: center;
-    padding: 1.5rem;
-    border-top: 2px solid #333;
-}
-
-.socials img {
-    width: 40px;
-    margin: 0 10px;
-}
-/* Add this to base.css Mobile section */
-.navigation {
-    display: none;
-    /* Hide by default on mobile */
-}
-
-.navigation.show {
-    display: flex;
-    /* Show when 'show' class is added via JS */
-}
-
-/* Ensure the button looks like an 'X' when open (Optional) */
-#menu.show::before {
-    content: "X";
-}
-
-#menu.show {
-    content: "";
-    /* Clears the hamburger symbol if necessary */
-}
-/* Normal incomplete courses (from your previous wireframe colors) */
-.course-card {
-    background-color: #ccc;
+    background-color: #ddd;
     border: 1px solid #999;
     padding: 1rem;
     text-align: center;
-    border-radius: 5px;
-    transition: transform 0.2s;
+    margin: 0.5rem;
+    border-radius: 4px;
 }
 
-/* Style for completed courses */
 .course-card.completed {
-    background-color: #8b2d2d;
-    /* Example: a dark reddish-brown */
+    background-color: var(--accent-color);
     color: white;
 }
 
-.course-card:hover {
-    filter: brightness(1.1);
-    cursor: pointer;
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.socials img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(1);
 }

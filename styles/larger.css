@@ -1,27 +1,24 @@
 @media screen and (min-width: 640px) {
-
-    /* Change Navigation to Horizontal */
-    .navigation {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     #menu {
         display: none;
-        /* Hide hamburger icon on desktop */
     }
 
-    /* Top Grid Layout (About Me and Photo side-by-side) */
+    .navigation {
+        display: flex;
+        justify-content: center;
+        background-color: var(--primary-color);
+    }
+
     .top-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        /* About Me gets more space */
         gap: 20px;
-        align-items: start;
     }
 
-    /* Course List Grid (Three items in a row) */
     .course-list {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 1rem;
     }
 }
