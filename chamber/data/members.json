@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "The Container Store Headquarters",
+            "address": "500 Freeport Pkwy, Coppell, TX 75019",
+            "phone": "(972) 539-8400",
+            "website": "https://www.containerstore.com",
+            "image": "images/container-store.png",
+            "membershipLevel": 3,
+            "tagline": "Where organization meets innovation, right from the heart of Coppell."
+        },
+        {
+            "name": "Coppell Deli",
+            "address": "443 W Bethel Rd, Coppell, TX 75019",
+            "phone": "(972) 462-0206",
+            "website": "https://www.coppelldeli.example.com",
+            "image": "images/coppell-deli.png",
+            "membershipLevel": 1,
+            "tagline": "Home of the world-famous Stubbs sandwich and classic Texas breakfasts."
+        },
+        {
+            "name": "Main Street Bakery & Bistro",
+            "address": "451 S Main St, Coppell, TX 75019",
+            "phone": "(214) 496-0400",
+            "website": "https://www.mainstreetbakery.example.com",
+            "image": "images/main-street-bakery.png",
+            "membershipLevel": 2,
+            "tagline": "Artisanal pastries, gourmet catering, and fine European-inspired dining."
+        },
+        {
+            "name": "Denton Tap Logistics & Supply",
+            "address": "1200 S Belt Line Rd, Coppell, TX 75019",
+            "phone": "(972) 555-0192",
+            "website": "https://www.dentontaplogistics.example.com",
+            "image": "images/denton-logistics.png",
+            "membershipLevel": 3,
+            "tagline": "Streamlining modern supply chains right next door to DFW Airport."
+        },
+        {
+            "name": "Cypress Waters Tech Partners",
+            "address": "3100 Olympus Blvd, Coppell, TX 75019",
+            "phone": "(469) 555-0143",
+            "website": "https://www.cypresswaterstech.example.com",
+            "image": "images/cypress-tech.png",
+            "membershipLevel": 2,
+            "tagline": "Providing top-tier cloud architecture and IT infrastructure services."
+        },
+        {
+            "name": "Coppell Farmers Market Association",
+            "address": "768 W Main St, Coppell, TX 75019",
+            "phone": "(972) 555-0175",
+            "website": "https://www.coppellfarmersmarket.example.com",
+            "image": "images/farmers-market.png",
+            "membershipLevel": 1,
+            "tagline": "Connecting the local community with fresh, Texas-grown agricultural products."
+        },
+        {
+            "name": "Trinity River Outdoor & Outfitter Co.",
+            "address": "110 N Denton Tap Rd, Coppell, TX 75019",
+            "phone": "(214) 555-0188",
+            "website": "https://www.trinityoutdoors.example.com",
+            "image": "images/trinity-outdoors.png",
+            "membershipLevel": 3,
+            "tagline": "Premium gear for exploring Lone Star trails, lakes, and camping grounds."
+        }
+    ]
+}
