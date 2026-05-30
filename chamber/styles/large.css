@@ -5,7 +5,6 @@
        ========================================== */
     #menu-toggle {
         display: none;
-        /* Hide burger icon on large screens */
     }
 
     nav ul {
@@ -19,7 +18,8 @@
     nav ul li a {
         border-bottom: none;
         padding: 0.5rem 1.5rem;
-        color: white;
+        color: var(--card-bg);
+        /* Inherits root standardization */
     }
 
     .header-container {
@@ -42,7 +42,6 @@
         padding: 0.75rem 1.5rem;
     }
 
-    /* Consolidated resetting margins */
     .list-view .member-card h3,
     .list-view .member-card p {
         margin: 0;
@@ -73,7 +72,6 @@
         gap: 1.5rem;
     }
 
-    /* Push Premium Spotlights row full span across grid container width */
     .spotlight-section {
         grid-column: 1 / span 2;
     }
@@ -92,7 +90,6 @@
 
     .spotlight-details {
         margin-top: auto;
-        /* Pin historical tracking rows firmly along identical baseline bounds */
     }
 
     /* ==========================================
@@ -106,7 +103,6 @@
         margin: 0 auto;
     }
 
-    /* Consolidated zero margins and combined selectors */
     .footer-contact,
     .footer-socials,
     .footer-meta {

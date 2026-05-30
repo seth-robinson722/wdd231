@@ -1,11 +1,27 @@
 :root {
+    /* Brand Colors */
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
-    --accent-gold: #d4af37;
-    --accent-silver: #bdc3c7;
+    --text-color: #2c3e50;
+
+    /* Backgrounds */
     --light-bg: #f5f6fa;
     --card-bg: #ffffff;
-    --text-color: #2c3e50;
+    --neutral-bg-light: #fafafa;
+    --button-bg-default: #eeeeee;
+
+    /* Borders & Accents */
+    --border-color-light: #eeeeee;
+    --border-color-md: #dddddd;
+    --text-muted: #666666;
+    --text-dark: #333333;
+
+    /* Membership Tiers & Badges */
+    --accent-gold: #d4af37;
+    --badge-gold-bg: #f1c40f;
+    --accent-silver: #bdc3c7;
+    --badge-silver-bg: #bdc3c7;
+    --badge-member-bg: #e0e0e0;
 }
 
 /* ==========================================
@@ -13,7 +29,8 @@
    ========================================== */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-bg);
+    /* Standardized white */
     padding: 1rem;
 }
 
@@ -42,7 +59,8 @@ header {
 #menu-toggle,
 #mode-toggle {
     font-size: 1.5rem;
-    color: white;
+    color: var(--card-bg);
+    /* Standardized white */
 }
 
 nav ul {
@@ -67,7 +85,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     background-color: var(--accent-gold);
-    color: black;
+    color: var(--text-dark);
 }
 
 /* ==========================================
@@ -93,14 +111,15 @@ main {
 
 .view-toggles button {
     padding: 0.5rem 1rem;
-    background-color: #eee;
+    background-color: var(--button-bg-default);
     border-radius: 4px;
     font-weight: bold;
 }
 
 .view-toggles button.active-view {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-bg);
+    /* Standardized white */
 }
 
 /* ==========================================
@@ -114,7 +133,7 @@ main {
 
 .grid-view .member-card {
     background-color: var(--card-bg);
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color-md);
     border-radius: 8px;
     padding: 1.25rem;
     text-align: center;
@@ -126,7 +145,7 @@ main {
     height: 100px;
     object-fit: contain;
     margin: 0 auto 1rem auto;
-    background-color: #fafafa;
+    background-color: var(--neutral-bg-light);
     border-radius: 50%;
     padding: 5px;
 }
@@ -138,7 +157,7 @@ main {
 
 .grid-view .member-card .tagline {
     font-style: italic;
-    color: #666;
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
@@ -158,18 +177,18 @@ main {
 
 /* Membership Level Colors & Badges */
 .badge-gold {
-    background-color: #f1c40f;
-    color: black;
+    background-color: var(--badge-gold-bg);
+    color: var(--text-dark);
 }
 
 .badge-silver {
-    background-color: #bdc3c7;
-    color: black;
+    background-color: var(--badge-silver-bg);
+    color: var(--text-dark);
 }
 
 .badge-member {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: var(--badge-member-bg);
+    color: var(--text-dark);
 }
 
 /* ==========================================
@@ -179,7 +198,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color-md);
     border-radius: 4px;
     background-color: var(--card-bg);
 }
@@ -188,7 +207,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0.75rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color-light);
 }
 
 .list-view .member-card:nth-child(even) {
@@ -203,7 +222,6 @@ main {
 .list-view .member-card .tagline,
 .list-view .member-card .membership-badge {
     display: none;
-    /* Strip visuals in list format */
 }
 
 .list-view .member-card h3 {
@@ -242,5 +260,6 @@ main {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: var(--card-bg);
+    /* Standardized white */
 }
