@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coppell Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Coppell Chamber of Commerce. Connecting local businesses, driving economic growth, and building a stronger community infrastructure in North Texas.">
+    <meta name="author" content="Seth Robinson">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Home - Coppell Chamber of Commerce">
+    <meta property="og:description"
+        content="Empowering local business partners, providing regional economic growth networks, and offering structural community assistance inside Coppell.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/your-username/wdd231/main/chamber/images/business1.png">
+    <meta property="og:url" content="https://your-username.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">🏔️</div>
+                <h1>Coppell Chamber of Commerce</h1>
+            </div>
+            <div class="header-controls">
+                <button id="mode-toggle" aria-label="Toggle Dark Mode">🌓</button>
+                <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Scenic modern overview of business district in Coppell Texas"
+                    class="hero-image" loading="eager">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Building Futures Together</h2>
+                <p>Empowering organizations, networks, and development platforms across North Texas.</p>
+                <a href="join.html" class="cta-button">Join the Chamber ➔</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+
+            <section class="home-card events-section">
+                <h3>Upcoming Community Events</h3>
+                <ul>
+                    <li>
+                        <strong>Chamber Networking Breakfast</strong>
+                        <p>Tuesday at 7:30 AM — Meet up at Main Street Bakery & Bistro.</p>
+                    </li>
+                    <li>
+                        <strong>Coppell Farmers Market Gala</strong>
+                        <p>Next Saturday at 10:00 AM — Support regional local agribusiness supply chains.</p>
+                    </li>
+                    <li>
+                        <strong>Business Technology Forum</strong>
+                        <p>June 15th at 2:00 PM — Exploring cloud transformations at Cypress Waters.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="home-card weather-section">
+                <h3>Local Weather Forecast</h3>
+                <div id="weather-current" class="weather-current-box">
+                    <p class="loading-placeholder">Fetching current weather conditions...</p>
+                </div>
+                <hr class="weather-divider">
+                <h4>3-Day Outlook</h4>
+                <div id="weather-forecast" class="weather-forecast-box">
+                </div>
+            </section>
+
+            <section class="spotlight-section">
+                <h3>Business Member Spotlights</h3>
+                <div id="spotlight-container" class="spotlight-grid">
+                    <p class="loading-placeholder">Loading premium configurations...</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-contact">
+                <h3>Coppell Chamber of Commerce</h3>
+                <p>100 Main Street</p>
+                <p>Coppell, Texas 75019</p>
+                <p>info@coppellcc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">🔗</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Seth Robinson</p>
+                <p>&copy; <span id="copyright-year"></span> Coppell Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js" defer></script>
+</body>
+
+</html>
