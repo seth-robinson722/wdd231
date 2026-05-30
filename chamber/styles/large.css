@@ -1,4 +1,6 @@
-/* Navigation Transitions */
+/* ==========================================
+   Navigation & Header
+   ========================================== */
 #menu-toggle {
     display: none;
     /* Hide burger icon on large screens */
@@ -18,63 +20,41 @@ nav ul li a {
     color: white;
 }
 
-/* Header Horizontal Flow Alignment */
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Enhancing Layout Adaptations */
+/* ==========================================
+   Directory & Member Layouts
+   ========================================== */
 #directory-container.grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
-/* List Row Flexbox Distribution */
 .list-view .member-card {
+    display: flex;
+    /* Ensured flex context is explicit */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1.5rem;
 }
 
-.list-view .member-card h3 {
-    width: 25%;
-    margin: 0;
-}
-
+/* Consolidated resetting margins */
+.list-view .member-card h3,
 .list-view .member-card p {
     margin: 0;
 }
 
-/* Horizontal Footer Flow Grid split */
-.footer-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.list-view .member-card h3 {
+    width: 25%;
 }
 
-.footer-contact {
-    text-align: left;
-    margin: 0;
-}
-
-.footer-socials {
-    text-align: center;
-    margin: 0;
-}
-
-.footer-meta {
-    text-align: right;
-    margin: 0;
-}
 /* ==========================================
-   Home Landing Page Grid Adapters (Desktop)
+   Home Landing Page & Hero (Desktop)
    ========================================== */
-
-/* Enhanced Hero Visual Presence */
 .hero-image {
     height: 400px;
 }
@@ -87,7 +67,6 @@ nav ul li a {
     font-size: 1.25rem;
 }
 
-/* Master Grid Structure Layout Matrix */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,7 +78,6 @@ nav ul li a {
     grid-column: 1 / span 2;
 }
 
-/* Horizontal alignment mapping for desktop views */
 .spotlight-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -115,4 +93,34 @@ nav ul li a {
 .spotlight-details {
     margin-top: auto;
     /* Pin historical tracking rows firmly along identical baseline bounds */
+}
+
+/* ==========================================
+   Footer Elements
+   ========================================== */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Consolidated zero margins and combined selectors */
+.footer-contact,
+.footer-socials,
+.footer-meta {
+    margin: 0;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-socials {
+    text-align: center;
+}
+
+.footer-meta {
+    text-align: right;
 }
