@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Coppell Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply for a Coppell Chamber of Commerce membership level. Grow your North Texas business network with special events, advertising, and training.">
+    <meta name="author" content="Seth Robinson">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">🏔️</div>
+                <div class="site-title">Coppell Chamber of Commerce</div>
+            </div>
+            <div class="header-controls">
+                <button id="mode-toggle" aria-label="Toggle Dark Mode">🌓</button>
+                <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-welcome">
+            <h1>Chamber Membership Application</h1>
+            <p>Select a tier that matches your organizational objectives and become a stakeholder in Coppell's economic
+                expansion platform.</p>
+        </section>
+
+        <div class="join-layout-grid">
+
+            <section class="form-container">
+                <form method="get" action="thankyou.html" id="membership-form">
+
+                    <label title="Applicant First Name">
+                        <span>First Name *</span>
+                        <input type="text" name="firstName" autocomplete="given-name" required>
+                    </label>
+
+                    <label title="Applicant Last Name">
+                        <span>Last Name *</span>
+                        <input type="text" name="lastName" autocomplete="family-name" required>
+                    </label>
+
+                    <label
+                        title="Organizational Title within your company (Minimum 7 characters, letters, spaces, hyphens only)">
+                        <span>Organizational Title</span>
+                        <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                            title="Minimum of 7 characters containing only letters, spaces, or hyphens.">
+                    </label>
+
+                    <label title="Email Address">
+                        <span>Email Address *</span>
+                        <input type="email" name="email" placeholder="e.g., executive@coppellbiz.com"
+                            autocomplete="email" required>
+                    </label>
+
+                    <label title="Mobile Phone Number">
+                        <span>Mobile Phone Number *</span>
+                        <input type="tel" name="phone" autocomplete="tel" required>
+                    </label>
+
+                    <label title="Business or Organization Name">
+                        <span>Business/Organization Name *</span>
+                        <input type="text" name="organization" autocomplete="organization" required>
+                    </label>
+
+                    <label title="Membership Level Tier Options">
+                        <span>Membership Level *</span>
+                        <select name="membershipLevel" required>
+                            <option value="" disabled selected>-- Select Your Membership Level --</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label title="Business or Organization Description">
+                        <span>Business/Organization Description</span>
+                        <textarea name="description" rows="4"
+                            placeholder="Tell us about your organization..."></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-btn">
+                </form>
+            </section>
+
+            <section class="cards-container">
+                <h2>Membership Tiers Available</h2>
+
+                <div class="tier-card card-animate" id="card-np">
+                    <h3>NP Membership</h3>
+                    <p>Designed strictly for non-profit configurations seeking community alignment.</p>
+                    <button type="button" class="modal-trigger" data-modal="modal-np">View Benefits ➔</button>
+                </div>
+
+                <div class="tier-card card-animate" id="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Ideal starter profile package providing exposure within core local structures.</p>
+                    <button type="button" class="modal-trigger" data-modal="modal-bronze">View Benefits ➔</button>
+                </div>
+
+                <div class="tier-card card-animate" id="card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Expanded outreach options via priority directories and multi-channel events.</p>
+                    <button type="button" class="modal-trigger" data-modal="modal-silver">View Benefits ➔</button>
+                </div>
+
+                <div class="tier-card card-animate" id="card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium infrastructure partnership offering full regional promotional dominance.</p>
+                    <button type="button" class="modal-trigger" data-modal="modal-gold">View Benefits ➔</button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="modal-np" class="benefit-modal">
+            <div class="modal-content">
+                <h3>NP Membership Benefits</h3>
+                <p><strong>Cost:</strong> Free ($0)</p>
+                <ul>
+                    <li>Standard inclusion within our business directory structures.</li>
+                    <li>Access to essential training frameworks and quarterly luncheons.</li>
+                    <li>Community networking opportunities.</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <p><strong>Cost:</strong> $150 / annually</p>
+                <ul>
+                    <li>Standard inclusion within our business directory structures.</li>
+                    <li>Access to fundamental networking events.</li>
+                    <li>General training forum allowances.</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <p><strong>Cost:</strong> $350 / annually</p>
+                <ul>
+                    <li>Enhanced high-visibility business directory structures.</li>
+                    <li>Social media spotlights and publication packages.</li>
+                    <li>20% discount configurations on official event admission passes.</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <p><strong>Cost:</strong> $600 / annually</p>
+                <ul>
+                    <li>Top-tier permanent homepage spotlight positions.</li>
+                    <li>Unlimited training passes and executive networking events.</li>
+                    <li>Comprehensive event sponsorship configuration rights.</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-contact">
+                <h3>Coppell Chamber of Commerce</h3>
+                <p>100 Main Street</p>
+                <p>Coppell, Texas 75019</p>
+                <p>info@coppellcc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">🔗</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Seth Robinson</p>
+                <p>&copy; <span id="copyright-year"></span> Coppell Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>

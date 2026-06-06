@@ -121,3 +121,21 @@
         text-align: right;
     }
 }
+/* ==========================================
+       Join Form Multi-Column Grid Adaptations
+       ========================================== */
+.join-layout-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+form#membership-form {
+    padding: 2rem;
+}
+
+.cards-container {
+    position: sticky;
+    top: 2rem;
+}
