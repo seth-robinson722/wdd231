@@ -449,7 +449,7 @@ dialog.benefit-modal::backdrop {
 }
 
 .close-modal {
-    background-color: #e74c3c;
+    background-color: #b22222;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -457,6 +457,12 @@ dialog.benefit-modal::backdrop {
     cursor: pointer;
     font-weight: bold;
     float: right;
+    transition: background-color 0.2s ease;
+}
+
+.close-modal:hover {
+    background-color: #8b0000;
+    /* Darker red depth on focus hover state */
 }
 
 /* Thank you Data Display Styles */

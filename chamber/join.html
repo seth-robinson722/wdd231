@@ -11,6 +11,14 @@
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <meta property="og:title" content="Join Us - Coppell Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply for a Coppell Chamber of Commerce membership level. Grow your North Texas business network with special events, advertising, and training.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/seth-robinson722/wdd231/chamber/images/business1.png">
+    <meta property="og:url" content="https://seth-robinson722.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
@@ -56,42 +64,45 @@
             <section class="form-container">
                 <form method="get" action="thankyou.html" id="membership-form">
 
-                    <label title="Applicant First Name">
+                    <label>
                         <span>First Name *</span>
-                        <input type="text" name="firstName" autocomplete="given-name" required>
+                        <input type="text" name="firstName" autocomplete="given-name" title="Applicant First Name"
+                            required>
                     </label>
 
-                    <label title="Applicant Last Name">
+                    <label>
                         <span>Last Name *</span>
-                        <input type="text" name="lastName" autocomplete="family-name" required>
+                        <input type="text" name="lastName" autocomplete="family-name" title="Applicant Last Name"
+                            required>
                     </label>
 
-                    <label
-                        title="Organizational Title within your company (Minimum 7 characters, letters, spaces, hyphens only)">
+                    <label>
                         <span>Organizational Title</span>
                         <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
-                            title="Minimum of 7 characters containing only letters, spaces, or hyphens.">
+                            title="Organizational Title (Minimum 7 characters, alphabetic, spaces, or hyphens only)">
                     </label>
 
-                    <label title="Email Address">
+                    <label>
                         <span>Email Address *</span>
                         <input type="email" name="email" placeholder="e.g., executive@coppellbiz.com"
-                            autocomplete="email" required>
+                            autocomplete="email" title="Applicant Email Address" required>
                     </label>
 
-                    <label title="Mobile Phone Number">
+                    <label>
                         <span>Mobile Phone Number *</span>
-                        <input type="tel" name="phone" autocomplete="tel" required>
+                        <input type="tel" name="phone" autocomplete="tel" title="Applicant Mobile Phone Number"
+                            required>
                     </label>
 
-                    <label title="Business or Organization Name">
+                    <label>
                         <span>Business/Organization Name *</span>
-                        <input type="text" name="organization" autocomplete="organization" required>
+                        <input type="text" name="organization" autocomplete="organization"
+                            title="Business or Organization Name" required>
                     </label>
 
-                    <label title="Membership Level Tier Options">
+                    <label>
                         <span>Membership Level *</span>
-                        <select name="membershipLevel" required>
+                        <select name="membershipLevel" title="Membership Tier Selection Level" required>
                             <option value="" disabled selected>-- Select Your Membership Level --</option>
                             <option value="np">NP Membership (Non-Profit)</option>
                             <option value="bronze">Bronze Membership</option>
@@ -100,15 +111,15 @@
                         </select>
                     </label>
 
-                    <label title="Business or Organization Description">
+                    <label>
                         <span>Business/Organization Description</span>
-                        <textarea name="description" rows="4"
-                            placeholder="Tell us about your organization..."></textarea>
+                        <textarea name="description" rows="4" placeholder="Tell us about your organization..."
+                            title="Business or Organization Description Space"></textarea>
                     </label>
 
                     <input type="hidden" name="timestamp" id="timestamp">
 
-                    <input type="submit" value="Submit Application" class="submit-btn">
+                    <button type="submit" class="submit-btn">Submit Application</button>
                 </form>
             </section>
 
