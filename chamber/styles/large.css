@@ -19,7 +19,6 @@
         border-bottom: none;
         padding: 0.5rem 1.5rem;
         color: var(--card-bg);
-        /* Inherits root standardization */
     }
 
     .header-container {
@@ -120,22 +119,24 @@
     .footer-meta {
         text-align: right;
     }
-}
-/* ==========================================
+
+    /* ==========================================
        Join Form Multi-Column Grid Adaptations
+       (Moved INSIDE the media query block)
        ========================================== */
-.join-layout-grid {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 2.5rem;
-    align-items: start;
-}
+    .join-layout-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2.5rem;
+        align-items: start;
+    }
 
-form#membership-form {
-    padding: 2rem;
-}
+    form#membership-form {
+        padding: 2rem;
+    }
 
-.cards-container {
-    position: sticky;
-    top: 2rem;
+    .cards-container {
+        position: sticky;
+        top: 2rem;
+    }
 }
