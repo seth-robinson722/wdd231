@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Project Site Plan - Artisan Sourdough Hub</title>
+    <meta name="description" content="Site plan and design blueprint for the Artisan Sourdough Hub web project.">
+    <meta name="author" content="Seth Robinson">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Work+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="site-plan.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Individual Project Site Plan</h1>
+        <p class="subtitle">WDD 231 - Frontend Web Development I</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Proposed Name:</strong> ArtisanSourdough.org</p>
+            <p><strong>Reason for Selection:</strong> This domain name clearly communicates the platform's core premise:
+                a dedicated space for artisan home baking focusing strictly on natural wild yeast fermentation. It
+                targets hobbyist bakers who respect traditional culinary arts, and the <code>.org</code> framework
+                signals a resource-heavy, community-driven educational space rather than an aggressively commercial
+                e-commerce storefront.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of the Artisan Sourdough Hub is to serve as an interactive instructional manual and
+                mathematical scaling utility for home bakers seeking to master wild yeast fermentation. The site
+                addresses the complex physics and biochemistry of bread-making by offering clear instructional
+                frameworks, an automated interactive hydration scaling utility calculator, and an integrated diagnostic
+                ledger to isolate and fix fermentation issues.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Target Audience User Scenarios</h2>
+            <p>The site design and content strategy are directed by the following real-world scenarios posed by target
+                site visitors:</p>
+            <ul>
+                <li><strong>Scenario 1:</strong> <em>"My sourdough loaf is coming out of the oven dense, gummy, and
+                        completely flat. How can I cross-reference my specific crumb structure profile against an API
+                        database to isolate exactly what went wrong during my bulk fermentation phase?"</em></li>
+                <li><strong>Scenario 2:</strong> <em>"I want to change my current baking routine to make a loaf with 78%
+                        hydration using 450 grams of King Arthur Bread Flour. How can I quickly calculate the exact
+                        water and starter weights without doing manual baker's percentage algebra, and save my
+                        preferences directly to the device?"</em></li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The chosen site palette draws directly from the natural elements of classical baking: deep herbal
+                additions, golden baked crusts, and raw unbleached flour grains.</p>
+
+            <div class="color-palette">
+                <div class="swatch primary">Deep Crust Green (#2C5E43)<br>Primary Headings & Navigation</div>
+                <div class="swatch secondary">Golden Levain (#D48C46)<br>Interactive UI Elements & Accents</div>
+                <div class="swatch accent">Unbleached Flour (#F9F6F0)<br>Site Background Canvas</div>
+                <div class="swatch text">Dark Rye Charcoal (#2B2621)<br>Body Layout Prose</div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+
+            <h3>Heading Typography: Merriweather (Serif)</h3>
+            <p>Applied to major article headings (H1, H2, H3). This font conveys literary reliability, tradition, and
+                academic weight, mirroring the historic and artisanal nature of natural fermentation.</p>
+
+            <h3>Body Typography: Work Sans (Sans-Serif)</h3>
+            <p>Applied to main prose, dashboard calculations, navigation elements, and layout grids. This highly
+                legible, modern sans-serif ensures data readability across small viewports when reading dense baking
+                directions or calculating weights.</p>
+        </section>
+
+        <section id="wireframe">
+            <h2>Home Page Wireframe Layout</h2>
+            <p>Below are structural layouts displaying how components align responsively across varying screen widths to
+                ensure adherence to standard UX criteria.</p>
+
+            <div class="wireframe-container">
+                <h3>Mobile Viewport Layout (320px Baseline)</h3>
+                <div class="wireframe-block">
+                    <div class="box">[HEADER: Logo / Branding Element]</div>
+                    <div class="box" style="margin: 0.5rem 0;">[NAV: Mobile Hamburger Trigger Menu Icon]</div>
+                    <div class="box"
+                        style="height: 100px; display: flex; align-items: center; justify-content: center;">[MAIN HERO:
+                        Core Site Mission Prose]</div>
+                    <div class="wireframe-grid">
+                        <div class="box">[DATA CARD 1: Troubleshooting Grid Element]</div>
+                        <div class="box">[DATA CARD 2: Troubleshooting Grid Element]</div>
+                        <div class="box">[DATA CARD 3: Troubleshooting Grid Element]</div>
+                        <div class="box">...Repeated up to 15 Data Profile Cards (Vertical Stack)...</div>
+                    </div>
+                    <div class="box">[FOOTER: Attribution Link & Video Demonstration URL]</div>
+                </div>
+
+                <h3>Desktop/Tablet Viewport Layout (Larger Viewports)</h3>
+                <div class="wireframe-block">
+                    <div style="display: flex; gap: 1rem; margin-bottom: 0.5rem;">
+                        <div class="box" style="flex: 1;">[HEADER: Logo / Branding]</div>
+                        <div class="box" style="flex: 2;">[NAV: Horizontal Menu Links (Wayfinding Applied)]</div>
+                    </div>
+                    <div class="box"
+                        style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+                        [MAIN HERO: Core Site Mission & Structural Abstract]</div>
+
+                    <p style="font-size: 0.85rem; color:#666; margin-bottom:0.25rem;">Dynamic API Fetch Grid Section
+                        (15+ Items Rendered):</p>
+                    <div class="wireframe-grid grid-3">
+                        <div class="box">[CARD 1: 4 Data Props + Modal Trigger]</div>
+                        <div class="box">[CARD 2: 4 Data Props + Modal Trigger]</div>
+                        <div class="box">[CARD 3: 4 Data Props + Modal Trigger]</div>
+                        <div class="box">[CARD 4: 4 Data Props + Modal Trigger]</div>
+                        <div class="box">[CARD 5: 4 Data Props + Modal Trigger]</div>
+                        <div class="box">[CARD 6: 4 Data Props + Modal Trigger]</div>
+                    </div>
+                    <div class="modal-preview">[Overlaid Native Modal Window Activated via Click Event]</div>
+
+                    <div class="box">[FOOTER: Author Attribution | Project Video Demonstration Target]</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Seth Robinson | Coppell, Texas | WDD 231 Project Site Plan</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+/* ==========================================================================
+   ARTISAN SOURDOUGH HUB - SITE PLAN STYLESHEET
+   File Naming: site-plan.css
+   Author: Seth Robinson
+   ========================================================================== */
+
+/* --- CSS CUSTOM PROPERTIES (Variables) --- */
+:root {
+    --primary-color: #2C5E43;
+    /* Deep Crust Rosemary Green */
+    --secondary-color: #D48C46;
+    /* Golden Levain Amber */
+    --accent-color: #F9F6F0;
+    /* Unbleached Flour Off-white */
+    --text-color: #2B2621;
+    /* Dark Rye Charcoal */
+    --white: #ffffff;
+    --gray-light: #f4f4f4;
+    --gray-medium: #e2e2e2;
+    --gray-border: #cccccc;
+
+    --heading-font: 'Merriweather', Georgia, serif;
+    --body-font: 'Work Sans', Helvetica, sans-serif;
+}
+
+/* --- RESET & BASE STYLES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+/* --- LAYOUT CONTAINERS --- */
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    border-bottom: 5px solid var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* --- TYPOGRAPHY STYLES --- */
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p,
+ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+code {
+    background-color: var(--gray-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: monospace;
+}
+
+/* --- COLOR PALETTE SWATCHES --- */
+.color-palette {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.swatch {
+    flex: 1;
+    min-width: 150px;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.swatch.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.swatch.secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.swatch.accent {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.swatch.text {
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+/* --- WIREFRAME LAYOUT STYLES --- */
+.wireframe-container {
+    margin-top: 1.5rem;
+}
+
+.wireframe-block {
+    background: var(--gray-light);
+    border: 2px dashed var(--gray-border);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+}
+
+.wireframe-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+    background: var(--gray-medium);
+    border: 1px solid #bbb;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.modal-preview {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #dcdcdb;
+    font-size: 0.8rem;
+    border: 1px dashed var(--text-color);
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1.5rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Design Breakpoints)
+   ========================================================================== */
+
+/* Small Mobile Screens (320px up to 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .color-palette {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
