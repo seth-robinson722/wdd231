@@ -476,3 +476,100 @@ dialog.benefit-modal::backdrop {
     color: var(--text-muted);
     width: 35%;
 }
+/* ==========================================
+   Chamber Discover Page - Core Mobile Layout
+   ========================================== */
+.discover-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visitor-box {
+    background-color: var(--light-bg);
+    border-left: 5px solid var(--accent-gold);
+    color: var(--text-color);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#discover-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    /* Grid template configurations matching mobile stack order explicitly */
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+}
+
+.discover-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color-md);
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 0.5rem;
+}
+
+.discover-card figure {
+    margin: 0.75rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.discover-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.discover-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.learn-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    margin-top: auto;
+}

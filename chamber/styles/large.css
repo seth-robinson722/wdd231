@@ -140,3 +140,49 @@
         top: 2rem;
     }
 }
+@media (min-width: 40.0625rem) and (max-width: 63.9375rem) {
+
+    /* Medium Screen Layout Configuration Matrix (641px to 1024px wide) */
+    #discover-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+    }
+}
+
+@media (min-width: 64rem) {
+
+    /* Large Desktop Screen Layout Configuration Matrix (1025px and above) */
+    #discover-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "item1 item2 item3"
+            "item4 item5 item6"
+            "item7 item8 .";
+        gap: 2rem;
+    }
+
+    .discover-card {
+        padding: 1.5rem;
+    }
+
+    .learn-more-btn {
+        width: auto;
+        align-self: flex-start;
+    }
+
+    /* CSS hover effects exclusively restricted to non-mobile platforms */
+    .discover-card:hover img {
+        transform: scale(1.06);
+        filter: brightness(0.9) contrast(1.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .learn-more-btn:hover {
+        background-color: var(--accent-gold);
+        color: var(--text-dark);
+    }
+}
